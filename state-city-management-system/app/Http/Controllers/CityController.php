@@ -18,7 +18,7 @@ class CityController extends Controller
 
     public function create()
     {
-        $states = State::all(); // Retrieve all states from the database
+        $states = State::all(); 
         return view('cities.create', compact('states'));
     }
 
