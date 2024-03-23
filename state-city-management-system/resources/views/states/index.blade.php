@@ -1,5 +1,7 @@
 <div class="container">
-    <h2>States</h2>
+    <h2>States</h2> 
+      <h1>
+        Total States: {{ $states->count() }}  </h1>
     <table class="table">
         <thead>
             <tr>
@@ -23,6 +25,7 @@
                 </td>
             </tr>
             @endforeach
+   
         </tbody>
     </table>
 </div>

@@ -1,14 +1,17 @@
- 
- 
-  <div class="container">
+<div class="container">
     <h1>Cities</h1>
     <a href="{{ route('cities.create') }}" class="btn btn-primary mb-3">Add New City</a>
     <table class="table">
         <thead>
+            <h1>
+       
+                Total Cities: {{ $cities->count() }}
+             
+</h1>
             <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th>State</th> <!-- New column for State -->
+                <th>State</th>  
                 <th>Actions</th>
             </tr>
         </thead>
@@ -17,7 +20,7 @@
                 <tr>
                     <td>{{ $city->id }}</td>
                     <td>{{ $city->name }}</td>
-                    <td>{{ $city->state->name }}</td> <!-- Display the state -->
+                    <td>{{ $city->state->name }}</td>  
                     <td>
                         <a href="{{ route('cities.edit', $city->id) }}" class="btn btn-sm btn-primary">Edit</a>
                         <form action="{{ route('cities.destroy', $city->id) }}" method="POST" style="display: inline;">
@@ -28,8 +31,8 @@
                     </td>
                 </tr>
             @endforeach
+            
+            
         </tbody>
     </table>
 </div>
-
- 
