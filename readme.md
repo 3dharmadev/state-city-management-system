@@ -1,5 +1,5 @@
-Laravel State and City Management System
-This Laravel application allows users to manage states and cities within those states. Users can perform CRUD (Create, Read, Update, Delete) operations on states and cities, and the system displays the count of cities for each state in the state listing page.
+<h5>Laravel State and City Management System
+This Laravel application allows users to manage states and cities within those states. Users can perform CRUD (Create, Read, Update, Delete) operations on states and cities, and the system displays the count of cities for each state in the state listing page. </h5>
 
 Features
 CRUD Operations: Users can create, read, update, and delete states and cities.
