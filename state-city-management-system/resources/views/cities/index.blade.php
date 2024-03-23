@@ -1,13 +1,12 @@
 <div class="container">
     <h1>Cities</h1>
     <a href="{{ route('cities.create') }}" class="btn btn-primary mb-3">Add New City</a>
+    <a href="{{ route('states.create') }}" class="btn btn-primary mb-3">Add New State</a>
+    <a href="{{ route('states.index') }}" class="btn btn-primary mb-3">Show All States</a>
+    <a href="{{ route('cities.index') }}" class="btn btn-primary mb-3">Show All Cities</a> 
+    <h3>Total Cities: {{ $cities->count() }}</h3>
     <table class="table">
         <thead>
-            <h1>
-       
-                Total Cities: {{ $cities->count() }}
-             
-</h1>
             <tr>
                 <th>ID</th>
                 <th>Name</th>
@@ -32,7 +31,7 @@
                 </tr>
             @endforeach
             
-            
         </tbody>
     </table>
 </div>
+
